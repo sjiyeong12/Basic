@@ -6,7 +6,7 @@ Buyer b = new Buyer();
 Tv tv = new Tv();
 Audio audio = new Audio();
 Computer com = new Computer();
-b.buy(tv);
+b.buy(tv); //자부관계
 // b.buy(tv.price, tv.name);
 // b.buy(audio.price, audio.name);
 // b.buy(com.price, com.name);
@@ -59,16 +59,18 @@ class Item {
 
 class Tv extends Item{
     public Tv(){
-        super(); //super은 조상을 가리킨다
+        super("Tv",40); //super은 조상을 가리킨다 생성자의 첫줄엔 기본 소괄호가 생략되어있다.
     }
 }
 
 class Audio extends Item{
-    String name = "Audio";
-int price = 100;
+    public Audio(){
+        super("Audio",100); 
+    }
 }
 
 class Computer extends Item{
-    String name = "Computer";
-int price = 160;
+    public Computer(){
+        super("Computer",60); 
+    }
 }
