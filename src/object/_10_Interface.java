@@ -2,6 +2,12 @@ package object;
 
 public class _10_Interface {
     public static void main(String[] args) {
+        Eagle eagle = new Eagle();
+        eagle.fly();
+        Flyable flyable[] = new Flyable[3];
+        flyable[0] = eagle;
+        Bat bat = new Bat();
+        flyable[1] = bat;
     }
 }
 
@@ -33,6 +39,7 @@ class Penguin extends Birds implements Groundable, Swimmable {}
 class Crow extends Birds implements Flyable{
     @Override
     public void fly() {
+        String baltop = "발톱";
         System.out.println("crowcrow~~~!");
     }
 }
