@@ -10,6 +10,7 @@ public class _06_HashMap {
         map.put("admin", "1234");
         map.put("user", "1234");
         map.put("admin", "1111");
+        if(!map.containsKey("user")) map.put("user","1234");
         System.out.println(map);
         Iterator it = map.entrySet().iterator(); //key, value 모두 불러올 때
 
