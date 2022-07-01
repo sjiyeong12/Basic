@@ -9,9 +9,9 @@ import javax.swing.JScrollPane;
 
 import swing.BaseFrm;
 
-public class _02_Notepad extends BaseFrm {
+public class _02_NotePad extends BaseFrm {
 public static void main(String[] args) {
-new _02_Notepad();
+new _02_NotePad();
 }
 private JMenuBar menuBar;
 private JMenu mnFile, mnInfo;
@@ -35,11 +35,11 @@ menuBar.add(mnFile);
 menuBar.add(mnInfo);
 setJMenuBar(menuBar);
 ta = new JTextArea();
-scp = new JScrollBar(tq);
+scp = new JScrollBar(ta);
 }
 
 @Override
 public void arrange() {
-    add(scp)l
+    add(scp);
 }
 }
